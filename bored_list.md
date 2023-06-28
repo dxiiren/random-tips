@@ -19,7 +19,7 @@ Here are several activities that can be pursued when experiencing a lull in prod
 
 
 ## B) Front End Video
-1. Javascript Basic : https://www.youtube. : om/watch?v=_8NvUoiU_wA&list=PLnrs9DcLyeJT2OAViJYE5FfsJTTDB7hFR&pp=iAQB
+1. Javascript Basic : https://www.youtube.com/watch?v=_8NvUoiU_wA&list=PLnrs9DcLyeJT2OAViJYE5FfsJTTDB7hFR&pp=iAQB
 
 2. JQuery : https://www.youtube.com/watch?v=Ja15OpA8dOQ&list=PLnrs9DcLyeJQr1cE1eyPRitPD1znrPUbt&pp=iAQB
 
