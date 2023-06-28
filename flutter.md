@@ -13,6 +13,7 @@ return MaterialApp(
 ```
 
 Any Random Notes :
+
 1.https://developer.okta.com/blog/2019/06/04/what-the-heck-is-sign-in-with-apple
 
 2.https://stackoverflow.com/questions/59970266/how-to-handle-deep-linking-to-a-flutter-app
