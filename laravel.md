@@ -1,14 +1,13 @@
 Situations :
 ======
 
-## 1- Route not found even have run (php artisan route:list)
+## 1) Route not found even have run (php artisan route:list)
 - you need to run this
 ```php
 php artisan serve optimize:clear
 ```
 
-
-## 2- Save a picture as PDF and print it
+## 2) Save a picture as PDF and print it
 - Install Dom PDF
 ```php
 composer require dompdf/dompdf
