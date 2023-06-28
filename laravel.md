@@ -1,13 +1,14 @@
 Situations :
 ======
 
-## Route not found even have run (php artisan route:list)
+## 1-Route not found even have run (php artisan route:list)
 - you need to run this
 ```php
 php artisan serve optimize:clear
 ```
 
-## Save a picture as PDF and print it
+
+## 2-Save a picture as PDF and print it
 - Install Dom PDF
 ```php
 composer require dompdf/dompdf
@@ -17,8 +18,8 @@ composer require dompdf/dompdf
 ```php
 //IN A SIMPLE WAY
 $pdf = App::make('dompdf.wrapper');
-$pdf->loadView($view, compact('picture'));
-return $pdf->download($name . '.pdf');
+$pdf->loadView('pages.user-panel.download-pnl', compact('report','consumer'));  //like return view
+return $pdf->download('pnl-report' . '.pdf');   //put their name here
 // return view('pages.user-panel.download-pnl', compact('report','consumer') );
 ```
 
@@ -49,6 +50,5 @@ private function makePdf($name,$view,$picture)
 
     return $pdf->download($name . '.pdf');
 }
-// return view('pages.user-panel.download-pnl', compact('report','consumer') );
 ```
 
