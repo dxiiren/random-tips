@@ -17,7 +17,18 @@ Here are several activities that can be pursued when experiencing a lull in prod
 
 8. REST API : https://www.youtube.com/watch?v=kZxgMRYEgaI&list=PLnrs9DcLyeJSfhHHbze8NfaHFh55HNBSh&pp=iAQB
 
-## B) Games
+
+## B) Front End Video
+1. Javascript Basic : https://www.youtube. : om/watch?v=_8NvUoiU_wA&list=PLnrs9DcLyeJT2OAViJYE5FfsJTTDB7hFR&pp=iAQB
+
+2. JQuery : https://www.youtube.com/watch?v=Ja15OpA8dOQ&list=PLnrs9DcLyeJQr1cE1eyPRitPD1znrPUbt&pp=iAQB
+
+3.  Javascript Advance : https://www.youtube.com/watch?v=523wUwYcBdU&list=PLnrs9DcLyeJSkjsHZH8wmot0WhIykNRRt&pp=iAQB
+
+4.  Vue Js : https://www.youtube.com/watch?v=j22cntCRVhM&list=PLnrs9DcLyeJQ0ZqgkIRRII4kIyc5Hbt3F&pp=iAQB
+
+
+## C) Games
 1. CSS Dinner : https://t.co/D1ARBasF7z
 
 2. Flexbox Froggy : https://t.co/OVuudbp3NZ
@@ -45,3 +56,4 @@ Here are several activities that can be pursued when experiencing a lull in prod
 13. Checkio : https://t.co/Q6tQziTEvo
 
 14. Flexbox Defense : https://t.co/Y25S5X8hyX
+
