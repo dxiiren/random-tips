@@ -9,6 +9,7 @@ ipfoncig
 ```
 
 * Go to Apache -> httpd.config
+
 ![Alt text](<picture/Laragon_Apache.png>)
 
 * Replace with
