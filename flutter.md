@@ -9,4 +9,10 @@ return MaterialApp(
    ),
    home: Home(),
  )
+
 ```
+
+Any Random Notes :
+https://developer.okta.com/blog/2019/06/04/what-the-heck-is-sign-in-with-apple
+https://stackoverflow.com/questions/59970266/how-to-handle-deep-linking-to-a-flutter-app
+https://youtu.be/KNAb2XL7k2g
