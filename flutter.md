@@ -1,5 +1,6 @@
 Learn Flutter here : https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7HKsfTtv8FOaTbLIf7feiQTRu&pp=iAQB
 
+'''php
 return MaterialApp(
    debugShowCheckedModeBanner: false,
    title: 'Starter Template',
@@ -8,3 +9,4 @@ return MaterialApp(
    ),
    home: Home(),
  )
+'''
