@@ -1,13 +1,7 @@
 Situations :
 ======
 
-## 1) Route not found even have run (php artisan route:list)
-- you need to run this
-```php
-php artisan serve optimize:clear
-```
-
-## 2) Save a picture as PDF and print it
+## 1) Save a picture as PDF and print it
 - Install Dom PDF
 ```php
 composer require dompdf/dompdf
@@ -97,15 +91,6 @@ private function makePdf($name,$view,$picture)
 </html>
 ```
 
-## 3) Try these three commands for clearing cache config:
 
-```php
-    php artisan config:cache // clear config cache
-    php artisan config:clear // clear config cache
-    php artisan cache:clear // clear cache
-    php artisan optimize  // To reoptimize the class loader
-    php artisan route:cache // clear route cache
-    php artisan view:clear // clear view cache
-```
 
 
