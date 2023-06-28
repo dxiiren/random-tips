@@ -1,6 +1,6 @@
 Here are several activities that can be pursued when experiencing a lull in productivity, while maintaining an unwavering commitment to coding as a lifelong passion <3 . We have youtube playlist and css games
 
-A) Video
+## A) Video
 1. Basic CSS
 https://www.youtube.com/watch?v=Oe6_7e2-sIs&list=PLnrs9DcLyeJSEVMJEnwwqODaduzAOr3Tx&pp=iAQB
 
@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=1CorBwBLTVM&list=PLnrs9DcLyeJTBgkV82UV_t6gjCRXzP
 8. REST API
 https://www.youtube.com/watch?v=kZxgMRYEgaI&list=PLnrs9DcLyeJSfhHHbze8NfaHFh55HNBSh&pp=iAQB
 
-B) Games
+## B) Games
 1. CSS Dinner
 https://t.co/D1ARBasF7z
 
