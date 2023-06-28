@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=1CorBwBLTVM&list=PLnrs9DcLyeJTBgkV82UV_t6gjCRXzP
 8. REST API
 https://www.youtube.com/watch?v=kZxgMRYEgaI&list=PLnrs9DcLyeJSfhHHbze8NfaHFh55HNBSh&pp=iAQB
 
-B) Games 
+B) Games
 1. CSS Dinner
 https://t.co/D1ARBasF7z
 
