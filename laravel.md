@@ -96,3 +96,16 @@ private function makePdf($name,$view,$picture)
 </body>
 </html>
 ```
+
+## 3) Try these three commands for clearing cache config:
+
+```php
+    php artisan config:cache // clear config cache
+    php artisan config:clear // clear config cache
+    php artisan cache:clear // clear cache
+    php artisan optimize  // To reoptimize the class loader
+    php artisan route:cache // clear route cache
+    php artisan view:clear // clear view cache
+```
+
+

@@ -19,17 +19,17 @@ php artisan serve --host 192.168.8.106 --port 3000
 ```
 
 ## 2. Artisan shortcut in terminal (php artisan serve to just pas)
-*Run this in terminal
+* Run this in terminal
 ```php
 notepad $PROFILE
 ```
 
-*Then write this in notepad and save
+* Then write this in notepad and save
 ```php
 function pas { php artisan serve $args }
 ```
 
-*if error happen do this
+* if error happen do this
 - Open a PowerShell terminal as an administrator
 ```php
 Get-ExecutionPolicy
