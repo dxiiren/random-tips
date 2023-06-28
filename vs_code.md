@@ -1,4 +1,4 @@
-Situations
+Situations :
 
 1. How to acess local host on another PC but on the same wifi ?
 - Find pv4 address (in terminal)
