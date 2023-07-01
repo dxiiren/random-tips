@@ -2,26 +2,28 @@ Situations :
 ======
 
 ## 1) Shortcut
-| Shortcut              | Description                    |
-|-----------------------|--------------------------------|
-| ctrl + up/down arrow  | Scroll up & down               |
-| ctrl + left/right arrow | Move cursor                   |
-| alt + up/down arrow   | Move code to another line      |
-| ctrl + G              | Search by line                 |
-|                       |                                |
-| ctrl + tab            | Shift tab                      |
-| ctrl + W              | Close tab                      |
-| ctrl + \              | Split right                    |
-|                       |                                |
-| ctrl + shift + up/down/left/right arrow | Highlight |
-| ctrl + D              | Select same word               |
-| alt + click           | Type on multiple lines          |
-|                       |                                |
-| ctrl + /              | Comment all                    |
-| alt + shift + A       | Comment single line            |
-|                       |                                |
-| ctrl + shift + k      | Delete line                    |
-| ctrl + shift + up/down arrow | Duplicate line              |
+| Description                    | Shortcut              |
+|--------------------------------|-----------------------|
+| Scroll up & down               | ctrl + up/down arrow  |
+| Move cursor                    | ctrl + left/right arrow |
+| Move code to another line      | alt + up/down arrow   |
+| Search by line                 | ctrl + G              |
+<!-- |                                |                       | -->
+| Shift tab                      | ctrl + tab            |
+| Close tab                      | ctrl + W              |
+| Split right                    | ctrl + \              |
+<!-- |                                |                       | -->
+| Highlight                      | ctrl + shift + up/down/left/right arrow |
+| Select same word               | ctrl + D              |
+| Type on multiple lines          | alt + click           |
+<!-- |                                |                       | -->
+| Comment all                    | ctrl + /              |
+| Comment single line            | alt + shift + A       |
+<!-- |                                |                       | -->
+| Delete line                    | ctrl + shift + k      |
+| Duplicate line                 | ctrl + shift + up/down arrow |
+
+
 
 
 ## 2) Extension
