@@ -1,10 +1,11 @@
 Learn Flutter here : https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7HKsfTtv8FOaTbLIf7feiQTRu&pp=iAQB
 
-Any Random Notes :
+## Any Random Notes :
 - https://developer.okta.com/blog/2019/06/04/what-the-heck-is-sign-in-with-apple
 - https://stackoverflow.com/questions/59970266/how-to-handle-deep-linking-to-a-flutter-app
 - https://youtu.be/KNAb2XL7k2g
 
+## Any Random code
 ```dart
 return MaterialApp(
    debugShowCheckedModeBanner: false,
