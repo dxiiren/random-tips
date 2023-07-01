@@ -5,7 +5,7 @@ Learn Flutter here : https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7
 - https://stackoverflow.com/questions/59970266/how-to-handle-deep-linking-to-a-flutter-app
 - https://youtu.be/KNAb2XL7k2g
 
-## Any Random code
+## Any Random Code :
 ```dart
 return MaterialApp(
    debugShowCheckedModeBanner: false,
