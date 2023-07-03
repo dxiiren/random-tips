@@ -62,41 +62,41 @@ Y
 ## 5. How to run 2 artisan command just by using 1 command
 * Run this in terminal
 ```php
-    notepad $PROFILE
+notepad $PROFILE
 ```
 
 * Then write this in notepad and save
 ```php
-    function pas2 {
-        php artisan optimize:clear
-        php artisan serve
-    }
+function pas2 {
+    php artisan optimize:clear
+    php artisan serve
+}
 ```
 
 * Run this in terminal
 ```php
-    pas2
+pas2
 ```
 
 ## 6. Pass parameter in artisan command
 * Run this in terminal
 ```php
-    notepad $PROFILE
+notepad $PROFILE
 ```
 
 * Then write this in notepad and save
 ```php
-    function pas3 {
-        param (
-            [string]$hostname
-        )
+function pas3 {
+    param (
+        [string]$hostname
+    )
 
-        $command = "php artisan serve --host $hostname --port 3000"
-        Invoke-Expression $command
-    }
+    $command = "php artisan serve --host $hostname --port 3000"
+    Invoke-Expression $command
+}
 ```
 
 * Run this in terminal
 ```php
-    pas3 -hostname "192.168.8.106"
+pas3 -hostname "192.168.8.106"
 ```
