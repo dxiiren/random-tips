@@ -96,51 +96,51 @@ private function makePdf($name,$view,$picture)
 - register variable in its controller (app\View\Components\LayoutApp.php)
 
 ```php
-    public $user;
+public $user;
 
-    public function __construct($user = null)
-    {
-        $this->user = $user ?? null;
-    }
+public function __construct($user = null)
+{
+    $this->user = $user ?? null;
+}
 ```
 
 - in component
 ```php
-    // use the $user in that component
-    @isset($user)
-        @foreach ($user as $item)
-            <h1> {{ $item->title }} </h1>
-            <h2> {{ $item->link }} </h2>
-            <h3> {{ $item->date }} </h3>
-        @endforeach
-    @endisset
+// use the $user in that component
+@isset($user)
+    @foreach ($user as $item)
+        <h1> {{ $item->title }} </h1>
+        <h2> {{ $item->link }} </h2>
+        <h3> {{ $item->date }} </h3>
+    @endforeach
+@endisset
 ```
 
 - in the one that use the component
 ```php
-    //pass the user variable to the component
-    @php
-        $user [] = (object)[
-            'title' => 'title',
-            'link' => 'link',
-            'date' => 'date'
-    ];
-    @endphp
+//pass the user variable to the component
+@php
+    $user [] = (object)[
+        'title' => 'title',
+        'link' => 'link',
+        'date' => 'date'
+];
+@endphp
 
-    <x-layout-app :$user>
-        <x-slot name="content">
-            <p>Ini ada adalah Content</p>
-        </x-slot>
-    </x-layout-app>
+<x-layout-app :$user>
+    <x-slot name="content">
+        <p>Ini ada adalah Content</p>
+    </x-slot>
+</x-layout-app>
 ```
 
 - or u can just not to pass it
 ```php
-    <x-layout-app>
-        <x-slot name="content">
-            <p>Ini ada adalah Content</p>
-        </x-slot>
-    </x-layout-app>
+<x-layout-app>
+    <x-slot name="content">
+        <p>Ini ada adalah Content</p>
+    </x-slot>
+</x-layout-app>
 ```
 
 
