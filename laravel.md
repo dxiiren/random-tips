@@ -127,7 +127,9 @@ public function __construct($user = null)
 ];
 @endphp
 
-__<x-layout-app :$user>__
+// The following line is important and should be noted:
+// <x-layout-app :$user>
+<x-layout-app :$user>
     <x-slot name="content">
         <p>Ini ada adalah Content</p>
     </x-slot>
@@ -136,6 +138,8 @@ __<x-layout-app :$user>__
 
 - or u can just not to pass it
 ```php
+// The following line is important and should be noted:
+// <x-layout-app>
 <x-layout-app>
     <x-slot name="content">
         <p>Ini ada adalah Content</p>
