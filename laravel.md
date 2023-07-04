@@ -127,7 +127,7 @@ public function __construct($user = null)
 ];
 @endphp
 
-<x-layout-app *:$user*>
+__<x-layout-app :$user>__
     <x-slot name="content">
         <p>Ini ada adalah Content</p>
     </x-slot>
