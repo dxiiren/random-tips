@@ -104,9 +104,11 @@ public function __construct($user = null)
 }
 ```
 
-- in component
+- in **component**
 ```php
 // use the $user in that component
+{{ $content }}
+
 @isset($user)
     @foreach ($user as $item)
         <h1> {{ $item->title }} </h1>
@@ -116,7 +118,7 @@ public function __construct($user = null)
 @endisset
 ```
 
-- in the one that use the component
+- in the one **that use the component**
 ```php
 //pass the user variable to the component
 @php
