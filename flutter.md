@@ -3,6 +3,28 @@ Flutter Structure
 Material App -> home:scaffold -> debug , backgroundColor
                               -> appbar (title)
                               -> body
+
+//APPBAR
+appBar: AppBar(
+  leading: Text('Ini leading'),
+  leadingWidth: 100,
+  title: Text('Resitku'),
+  centerTitle: true,
+  actions: [
+    Container(
+      width: 100,
+      height: 100,
+      child: Text('Ini actions'),
+    )
+  ],
+  bottom: PreferredSize(
+    preferredSize: Size.fromHeight(100),
+    child: Text('Ini Bottom'),
+  ),
+  flexibleSpace: Container(
+    child: Text('Ini Flexible'),
+  ),
+),
 ```
 
 ## 1) Visible Widget
@@ -36,6 +58,47 @@ FloatingActionButton(
   },
 
   child: Icon(Icons.add),
+),
+
+//TEXT FEILD
+child: TextField(
+  //features
+  autocorrect: true,
+  autofocus: true,
+  showCursor: true,
+  enableSuggestions: true,
+  enableInteractiveSelection: true,
+  enabled: true,
+  obscureText: false,
+  keyboardType: TextInputType.name,
+  readOnly: false,
+
+  //decoration
+  textAlign: TextAlign.start,
+  textCapitalization: TextCapitalization.characters,
+  style: TextStyle(
+    color: Colors.amber,
+    fontSize: 20,
+  ),
+  decoration: InputDecoration(
+    icon: Icon(Icons.person_2,size: 30,),
+    border: OutlineInputBorder(),
+    prefixText: "Name : ",
+    hintText: "Please enter your name",
+    labelText: "Full Name",
+    prefixIcon: Icon(Icons.remove_red_eye ,size: 30),
+    suffixIcon: Icon(Icons.camera_enhance ,size: 30), 
+  ),
+
+
+  //control
+  controller: myController,
+  //onchanged
+  // onEditingComplete: ,
+  onSubmitted: (value) {
+    print(value);
+  },
+
 ),
 
 ```

@@ -146,4 +146,67 @@ class myApp extends StatelessWidget {
   }
 }
 
+//TABBAR
+import 'package:flutter/material.dart';
+
+main() {
+  runApp(myApp());
+}
+
+class myApp extends StatelessWidget {
+  // const myApp({super.key});
+  List<Tab> myTab = [
+    Tab(
+      text: "Tab 1",
+      icon: Icon(Icons.camera),
+    ),
+    Tab(
+      text: "Tab 2",
+      icon: Icon(Icons.star),
+    ),
+    Tab(
+      text: "Tab 3",
+      icon: Icon(Icons.add),
+    )
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: DefaultTabController(
+        length: myTab.length,
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text('Resitku'),
+            bottom: TabBar(
+              labelColor: Colors.white,
+              unselectedLabelColor: Colors.black,
+              indicator: BoxDecoration(
+                  color: Colors.blueGrey,
+                  border: Border(
+                      bottom: BorderSide(
+                    color: Colors.black,
+                    width: 5,
+                  ))),
+              tabs: myTab,
+            ),
+          ),
+          body: TabBarView(children: [
+            Center(
+              child: Text('Ini Tab 1'),
+            ),
+            Center(
+              child: Text('Ini Tab 2'),
+            ),
+            Center(
+              child: Text('Ini Tab 3'),
+            ),
+          ]),
+        ),
+      ),
+    );
+  }
+}
+
 
