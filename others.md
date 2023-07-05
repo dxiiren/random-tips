@@ -1,4 +1,4 @@
-SourceTree wont open
+Source tree not starting in windows 10
 
 1. Navigate to C:\Users\UserName\AppData\Local\Atlassian
 2. Under there, you will see SourceTree.exe_Url_RandomGuid
