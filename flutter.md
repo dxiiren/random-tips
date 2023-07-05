@@ -3,7 +3,6 @@ Flutter Structure
 Material App -> home:scaffold -> debug , backgroundCOlor
                               -> appbar (title)
                               -> body
-======
 
 ## 1) Widget
 
@@ -79,7 +78,6 @@ children: [
 //2
 
 ```
-======
 
 ## 2) List / Array
 ```dart
@@ -89,6 +87,7 @@ body: Stack(
   child : Text('Ini adalah column')
 )
 ```
+
 ======
 
 
