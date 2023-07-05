@@ -5,7 +5,45 @@ Material App -> home:scaffold -> debug , backgroundColor
                               -> body
 ```
 
-## 1) Widget
+## 1) Visible Widget
+```dart
+//TEXT
+Text(
+  'Hi ini adalah text je ',
+  maxLines : 2,
+  overflow: textOverflow.ellipses,
+  textDirection : TextDirection
+  style : TextStyle(
+    backgroundColor:
+    fontSize:
+    fontWeigth:
+    decoration: TextDecoration()
+  )
+)
+
+//IMAGE
+Image(
+  fit:BoxFit.cover ,
+  image: NetworkImage('https://picsum.photos/200')  //AssetImage('')
+)
+
+//BUTTON
+FloatingActionButton(
+  onPressed: () {     // onPressed: null
+    setState(() {
+      counter++;
+    });
+  },
+
+  child: Icon(Icons.add),
+),
+
+```
+
+
+
+
+## 2) Invisible Widget
 
 - A) Column / Row
 ```dart
@@ -25,6 +63,23 @@ body: Stack(
   @
   child : Text('Ini adalah column')
 )
+```
+
+- C) Card
+```dart
+body: Card(
+  margin: EdgeInsets.all(20),
+  child : Container(
+    
+  )
+)
+```
+
+- D) Single Child Scroll
+```dart
+body: SingleChildScrollView(
+  scrollDirection: Axis.horizontal,
+  child: Row()
 ```
 
 - C) ListView
@@ -72,21 +127,61 @@ children: [
     width: 100,
     height: 100,
     color: Colors.amber,
+    padding: EdgeInsets.all(10),
+    margin: EdgeInsets.symmetric(
+      vertical: 15,
+      horizontal: 8
+    ),
     child: Text('Ini adalah text'),
   )
 ],
 
-//2
+//2. LIST TILE
+children: [
+  ListTile(
+    title: Text('Ahmad Albab'),
+    subtitle: Text(' Ini mesej daripada Ahmad Albab'),
+    leading: CircleAvatar(),
+    trailing: Text('10:00 PM'),
+    tileColor : Colors.red,
+    contextPadding: EdgeInsects.all(10),
+    onTap(){
+    }
+  ),
+
+  Divider(),
+  SizedBox(
+    width:
+    height:
+  )
+]
+
+
+
 
 ```
 
 ## 2) List / Array
 ```dart
-body: Stack(
-  children: myList2,
-  @
-  child : Text('Ini adalah column')
-)
+List<Color> myColor = [Colors.red, Colors.blue, Colors.yellow, Colors.green];
+
+List<Widget> myList = [
+  Container(
+    height: 300,
+    width: 300,
+    color: Colors.amber,
+    child: Text('Ini Aplikasi Resitku'),
+  ),
+  Container(
+    height: 300,
+    width: 300,
+    color: Colors.red,
+    child: Text('Ini Aplikasi Resitku'),
+  ),
+];
+
+List<Widget> myList2 = List.generate(100, (index) => Text(" Ini nombor  ${index+1}" , style: TextStyle(fontSize: 20 + double.parse(index.toString())),));
+
 ```
 
 ======
