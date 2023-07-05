@@ -1,12 +1,14 @@
-## 1) Flutter Structure
+Flutter Structure
 
 Material App -> home:scaffold -> debug , backgroundCOlor
                               -> appbar (title)
                               -> body
 
-- Body
+======
 
-1) Column / Row
+## 1) Widget
+
+- A) Column / Row
 ```dart
 body: Column(
   mainAxisAlignment: MainAxisAlignment.start,
@@ -17,7 +19,7 @@ body: Column(
 )
 ```
 
-2) Stack
+- B) Stack
 ```dart
 body: Stack(
   children: myList2,
@@ -26,14 +28,14 @@ body: Stack(
 )
 ```
 
-3) ListView
+- C) ListView
 ```dart
 body: ListView(
   children: myList2,
 )
 ```
 
-4) ListView Builder
+- D) ListView Builder
 ```dart
 body: ListView.builder(
   itemCount : myList.length
@@ -45,7 +47,7 @@ body: ListView.builder(
 )
 ```
 
-5) ListView Separator
+- E) ListView Separator
 ```dart
 body: ListView.separated(
   itemCount : myList.length
@@ -54,7 +56,7 @@ body: ListView.separated(
 
     );
   },
-  separatorBu: (context,index){
+  separatorBuilder: (context,index){
     return Container(
 
     );
@@ -62,10 +64,10 @@ body: ListView.separated(
 )
 ```
 
-- Things to put in children
+- F) Things to put in children
 
-1) Container
 ```dart
+//1. CONTAINER
 children: [
   Container(
     width: 100,
@@ -74,6 +76,9 @@ children: [
     child: Text('Ini adalah text'),
   )
 ],
+
+//2
+
 ```
 
 
@@ -91,6 +96,7 @@ children: [
 
 
 ======
+
 
 Learn Flutter here : https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7HKsfTtv8FOaTbLIf7feiQTRu&pp=iAQB
 
