@@ -1,8 +1,9 @@
 Flutter Structure
-
+```dart
 Material App -> home:scaffold -> debug , backgroundColor
                               -> appbar (title)
                               -> body
+```
 
 ## 1) Widget
 
