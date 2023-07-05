@@ -1,6 +1,6 @@
 Flutter Structure
 
-Material App -> home:scaffold -> debug , backgroundCOlor
+Material App -> home:scaffold -> debug , backgroundColor
                               -> appbar (title)
                               -> body
 
@@ -91,9 +91,8 @@ body: Stack(
 ======
 
 
-Learn Flutter here : https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7HKsfTtv8FOaTbLIf7feiQTRu&pp=iAQB
-
 ## Any Random Notes :
+- Learn Flutter here : https://www.youtube.com/watch?v=epRWFH47xCI&list=PL7jdfftn7HKsfTtv8FOaTbLIf7feiQTRu&pp=iAQB
 - https://developer.okta.com/blog/2019/06/04/what-the-heck-is-sign-in-with-apple
 - https://stackoverflow.com/questions/59970266/how-to-handle-deep-linking-to-a-flutter-app
 - https://youtu.be/KNAb2XL7k2g
