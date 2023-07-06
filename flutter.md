@@ -261,6 +261,7 @@ return Scaffold(
   appBar: AppBar(title: Text("Page 1")),
   floatingActionButton: FloatingActionButton(
     onPressed: () {
+      //THIS ONE TO NAVIGATE
       Navigator.of(context).pop();
     },
     child: Icon(Icons.keyboard_arrow_left),
