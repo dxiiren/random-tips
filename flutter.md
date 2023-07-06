@@ -133,7 +133,6 @@ body: Stack(
 body: Card(
   margin: EdgeInsets.all(20),
   child : Container(
-    
   )
 )
 ```
@@ -150,6 +149,18 @@ body: SingleChildScrollView(
 body: ListView(
   children: myList2,
 )
+```
+
+- D) Grid View
+```dart
+body: GridView.count(
+  padding: EdgeInsets.all(10),
+  crossAxisCount: 3,
+  crossAxisSpacing: 20,
+  mainAxisSpacing: 10,
+  childAspectRatio: 3/4,
+  children: myList,
+),
 ```
 
 - D) ListView Builder
@@ -218,10 +229,6 @@ children: [
     height:
   )
 ]
-
-
-
-
 ```
 
 ## 2) List / Array
@@ -244,9 +251,109 @@ List<Widget> myList = [
 ];
 
 List<Widget> myList2 = List.generate(100, (index) => Text(" Ini nombor  ${index+1}" , style: TextStyle(fontSize: 20 + double.parse(index.toString())),));
-
 ```
 
+## 3) ANIMATION
+
+- A) NAVIGATION
+```dart
+return Scaffold(
+  appBar: AppBar(title: Text("Page 1")),
+  floatingActionButton: FloatingActionButton(
+    onPressed: () {
+      Navigator.of(context).pop();
+    },
+    child: Icon(Icons.keyboard_arrow_left),
+  ),
+  floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+  body: Center(
+    child: Text(
+      'Ini Page 1',
+      style: TextStyle(fontSize: 50),
+    ),
+  ),
+  // body: ,
+);
+```
+
+- B) ROUTE
+```dart
+  //main.dart
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/homepage',
+      routes: {
+        '/pageone' : (context) => PageOne(),
+        '/pagetwo' : (context) => PageTwo(),
+        '/pagethree' : (context) => PageThree()
+      },
+    );
+
+  //pageOne
+  body: Center(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        Text('Ini First Page'),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                //this one to change to back page
+                Navigator.of(context).pop();
+              },
+              child: Text('Back')),
+            SizedBox(
+              width: 30,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                //this one to change to another page
+                Navigator.of(context).pushNamed('/pagetwo');
+              },
+              child: Text('Next')),
+          ],
+        )
+      ],
+    )
+  ),
+```
+
+- C) Popup
+```dart
+//SHOW DIALOG + ALERT DIALOG
+floatingActionButton: FloatingActionButton(
+  child: Icon(Icons.delete),
+  onPressed: () {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text('Confirm ?'),
+          content: Text('Are you sure want to delete this item ?'),
+          actions: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text('Yes')
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text('No')
+            ),
+          ],
+        );
+      }
+    );
+  }
+),
+```
 ======
 
 
