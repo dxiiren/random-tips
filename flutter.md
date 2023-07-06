@@ -4,6 +4,18 @@ Material App -> home:scaffold -> debug , backgroundColor
                               -> appbar (title)
                               -> body
 
+//MATERIAL APP
+return MaterialApp(
+  debugShowCheckedModeBanner: false,
+  theme: ThemeData(
+    brightness: Brightness.dark,
+    appBarTheme: AppBarTheme(
+      color: Colors.red,
+    )
+  ),
+  home: ProductHome()
+);
+
 //APPBAR
 appBar: AppBar(
   leading: Text('Ini leading'),
@@ -113,10 +125,29 @@ child: TextField(
 body: Column(
   mainAxisAlignment: MainAxisAlignment.start,
   crossAxisAlignment: CrossAxisAlignment.start,
+  alignment: Alignment.bottomLeft,
+
   children: myList2,
   @
   child : Text('Ini adalah column')
 )
+```
+
+-B) Container
+```dart
+children: [
+  Container(
+    width: 100,
+    height: 100,
+    color: Colors.amber,
+    padding: EdgeInsets.all(10),
+    margin: EdgeInsets.symmetric(
+      vertical: 15,
+      horizontal: 8
+    ),
+    child: Text('Ini adalah text'),
+  )
+],
 ```
 
 - B) Stack
@@ -132,6 +163,7 @@ body: Stack(
 ```dart
 body: Card(
   margin: EdgeInsets.all(20),
+  padding: EdgeInsets.all(10),
   child : Container(
   )
 )
@@ -163,14 +195,50 @@ body: GridView.count(
 ),
 ```
 
+- E) Grid View Builder
+```dart
+body: GridView.builder(
+  padding: EdgeInsets.all(10),
+  gridDelegate:
+      SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        crossAxisSpacing: 10,
+        mainAxisSpacing: 10,
+      ),
+  itemBuilder: ((context, index) {
+    return GridTile(
+      child: Image.network(dummyData[index].imageurl),
+      footer: Container(
+        color: Colors.blue,
+        child: Column(
+          children: [
+            Text(dummyData[index].name),
+            Text(dummyData[index].harga),
+            Text(dummyData[index].description),
+          ],
+        ),
+      ),
+    );
+  }),
+  itemCount: dummyData.length,
+)
+```
+
 - D) ListView Builder
 ```dart
 body: ListView.builder(
   itemCount : myList.length
   itemBuilder: (context,index){
-    return Container(
-
-    );
+    return ListTile(
+      title: Text('Ahmad Albab'),
+      subtitle: Text(' Ini mesej daripada Ahmad Albab'),
+      leading: CircleAvatar(),
+      trailing: Text('10:00 PM'),
+      tileColor : Colors.red,
+      contextPadding: EdgeInsects.all(10),
+      onTap(){
+      }
+    ),
   },
 )
 ```
@@ -192,44 +260,8 @@ body: ListView.separated(
 )
 ```
 
-- F) Things to put in children
 
-```dart
-//1. CONTAINER
-children: [
-  Container(
-    width: 100,
-    height: 100,
-    color: Colors.amber,
-    padding: EdgeInsets.all(10),
-    margin: EdgeInsets.symmetric(
-      vertical: 15,
-      horizontal: 8
-    ),
-    child: Text('Ini adalah text'),
-  )
-],
 
-//2. LIST TILE
-children: [
-  ListTile(
-    title: Text('Ahmad Albab'),
-    subtitle: Text(' Ini mesej daripada Ahmad Albab'),
-    leading: CircleAvatar(),
-    trailing: Text('10:00 PM'),
-    tileColor : Colors.red,
-    contextPadding: EdgeInsects.all(10),
-    onTap(){
-    }
-  ),
-
-  Divider(),
-  SizedBox(
-    width:
-    height:
-  )
-]
-```
 
 ## 2) List / Array
 ```dart
@@ -251,6 +283,31 @@ List<Widget> myList = [
 ];
 
 List<Widget> myList2 = List.generate(100, (index) => Text(" Ini nombor  ${index+1}" , style: TextStyle(fontSize: 20 + double.parse(index.toString())),));
+
+//MODEL
+import 'package:flutter/material.dart';
+
+class Product {
+  @required
+  String name = "";
+  @required
+  String imageurl = "";
+  @required
+  String description = "";
+  @required
+  String harga = "";
+
+  Product(this.name, this.imageurl, this.description, this.harga);
+}
+
+
+List<Product> dummyData = List.generate(100, (index) {
+  return Product(
+      faker.person.name(),
+      "https://picsum.photos/id/$index/200",
+      faker.lorem.sentence(),
+      Random().nextInt(1000).toString());
+});
 ```
 
 ## 3) ANIMATION
