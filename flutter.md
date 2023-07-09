@@ -343,9 +343,9 @@ return Scaffold(
       debugShowCheckedModeBanner: false,
       initialRoute: '/homepage',
       routes: {
-        '/pageone' : (context) => PageOne(),
-        '/pagetwo' : (context) => PageTwo(),
-        '/pagethree' : (context) => PageThree()
+        '/pageone' : (context) => PageOne(),  //class
+        '/pagetwo' : (context) => PageTwo(),  //class
+        '/pagethree' : (context) => PageThree()  //class
       },
     );
 
