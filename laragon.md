@@ -48,7 +48,6 @@ DocumentRoot "C:/laragon/www/myapp/public"
 
 * Setup driver (right click -> tools -> Edit driver\etc\hosts)
 ```php
-<VirtualHost *:80> 
-    127.0.0.1    manage.kedaiku.test
+127.0.0.1    manage.kedaiku.test
 ```  
 
